@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #2c235f;
+  color:  #2c235f;
+}
+
+header {
+  background-color: #0077b6;
+  color: rgb(235, 223, 223);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #0096c7;
+}
+
+/* ====== Plantilla 1: Introducción ====== */
+.plantilla1 {
+    background: #d8f3dc;
+
+  padding: 2rem;
+  text-align: center;
+}
+
+.plantilla1 h2 {
+  color: #16161d;
+  border-bottom: 3px solid #0096c7;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* ====== Plantilla 2: Síntomas ====== */
+.plantilla2 {
+    background: #d8f3dc;
+  padding: 2rem;
+}
+
+.plantilla2 ul {
+  max-width: 600px;
+  margin: auto;
+  background: #d8f3dc;
+  list-style: square;
+  font-size: 1.1rem;
+}
+
+.plantilla2 li {
+  margin: 0.5rem 0;
+}
+
+/* ====== Plantilla 3: Contagio ====== */
+.plantilla3 {
+    background: #d8f3dc;
+  padding: 2rem;
+  text-align: center;
+}
+
+.plantilla3 img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Plantilla 4: Prevención ====== */
+.plantilla4 {
+  background: #d8f3dc;
+  padding: 2rem;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tip {
+  background: #95d5b2;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #023e8a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Plantilla 5: Tratamiento ====== */
+.plantilla5 {
+   background: #d8f3dc;
+  padding: 2rem;
+  text-align: center;
+}
+
+.plantilla5 blockquote {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #13b937;
+  border-left: 5px solid  #d8f3dc;
+  padding-left: 1rem;
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #03045e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ====== Responsividad ====== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .tips {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
